@@ -6,6 +6,7 @@
 int main(int argc, char *argv[]) {
 	
 	int i;
+	int a; //절대값을 저장하는 변 
 
 	
 	printf("input an integer : ");
@@ -13,15 +14,12 @@ int main(int argc, char *argv[]) {
 	
 	if (i > 0)
 	{
-	    printf("양 수 입 니 다.");
-    }
-    else if (i == 0)
-	{
-	    printf("0 입니다.");
+	   a = i;
     }
 	else
 	{
-	    printf("음수입니다.");
+	   a = -i;
     }
+    printf("절대값은 %i입니다.", a);
 	return 0;
 }
